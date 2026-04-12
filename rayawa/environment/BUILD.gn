@@ -1,0 +1,16 @@
+static_library("environment") {
+    sources = [
+        # 环境监测板开发
+        "mq2_demo.c",                                       # MQ2-可燃气体浓度传感器开发
+        "oled_demo.c", "oled_ssd1306.c",                    # OLED显示屏开发
+        "enrionment_demo.c","aht20.c", "oled_ssd1306.c"     # AHT20温湿度传感器开发
+
+        # 注：以上程序只能同时运行一行，需注释掉不运行的程序
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    ]
+}

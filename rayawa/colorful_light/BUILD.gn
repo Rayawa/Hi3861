@@ -1,0 +1,19 @@
+static_library("colorful_light") {
+    sources = [
+        # 炫彩灯板开发
+        "beep.c",                   # 蜂鸣器开发
+        "music.c",                  # 蜂鸣器音乐播放
+        "led.c",                    # 混合音乐与三色灯
+        "human_sensor.c",           # 人体感应器
+        "photosensitive.c",         # 光敏传感器
+        "human_sensor_light.c",     # 人体感应灯
+
+        # 注：以上程序只能同时运行一行，需注释掉不运行的程序
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    ]
+}

@@ -1,0 +1,19 @@
+static_library("traffic_light") {
+    sources = [
+        # 红绿灯板开发
+        "light.c",    # 灯单独
+        "traffic.c",  # 交通灯
+        "ability.c",  # 多线程开发
+        "button.c",   # 按键开发
+        "control.c",  # 按钮控制交通灯
+
+        # 注：以上程序只能同时运行一行，需注释掉不运行的程序
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+        "//device/hisilicon/hispark_pegasus/sdk_liteos/include",
+    ]
+}

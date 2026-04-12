@@ -1,5 +1,6 @@
-static_library("class7") {
+static_library("at_command") {
     sources = [
+        # AT指令开发
         "cal.c"
     ]
     include_dirs = [
