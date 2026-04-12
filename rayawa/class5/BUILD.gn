@@ -1,0 +1,16 @@
+static_library("class5") {
+    sources = [
+        #"mq2_demo.c",
+        #"oled_demo.c", "oled_ssd1306.c",
+        "enrionment_demo.c","aht20.c", "oled_ssd1306.c"
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    ]
+}
+# 任务1：要求利用OpenHarmony提供的ADC函数接口AdcRead获取空气中可燃气体浓度值并打印。 
+# 任务2：要求通过调用OLED 相关API函数实现在OLED显示屏上指定位置显示指定信息。  
+# 任务3：要求利用OpenHarmony提供的I2C接口函数实现从AHT20温湿度传感器中获取空气的温湿度值并打印输出。

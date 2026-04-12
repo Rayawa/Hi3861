@@ -2,7 +2,10 @@ import("//build/lite/config/component/lite_component.gni")
 
 lite_component("rayawa_app") {
     features = [
-       # "class3:class3",
-        "class4:class4",
+      #  "class3:class3",
+      #  "class4:class4",
+       #  "class5:class5",
+       # "class6:class6",
+        "class7:class7",
     ]
 }

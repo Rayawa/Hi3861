@@ -1,0 +1,15 @@
+static_library("class6") {
+    sources = [
+       # "human_sensor.c",          # 人体感应器
+      #  "photosensitive.c",        # 光敏传感器
+        "human_sensor_light.c",    # 人体感应灯
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    ]
+}
+# 任务1：利用OpenHarmony提供的ADC函数接口读取人体感应器的值并打印的功能。 
+# 任务2：要求实现人体感应灯功能，当有人时炫彩灯亮，没有人时炫彩灯自动熄灭。 

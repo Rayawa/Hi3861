@@ -1,0 +1,10 @@
+static_library("class7") {
+    sources = [
+        "cal.c"
+    ]
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//vendor/hisi/hi3861/hi3861/components/at/include",
+        "//common/main",
+    ]
+}
